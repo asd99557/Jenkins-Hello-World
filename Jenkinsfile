@@ -5,7 +5,7 @@ pipeline {
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
         NEXUS_URL = "10.126.66.233:8081"
-        NEXUS_REPOSITORY = "maven-nexus-repo"
+        NEXUS_REPOSITORY = "docker-private-repo"
         NEXUS_CREDENTIAL_ID = "docker_hub"
     }
 

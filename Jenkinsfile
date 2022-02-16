@@ -2,11 +2,11 @@ properties([pipelineTriggers([githubPush()])])
 
 pipeline {
     environment {
-        // name of the image without tag
-        dockerRepo = "http://10.126.66.233:8081/repository/docker-private-repo/jenkins-hello-world"
-        dockerCredentials = 'docker_hub'
-        dockerImageVersioned = ""
-        dockerImageLatest = ""
+        NEXUS_VERSION = "nexus3"
+        NEXUS_PROTOCOL = "http"
+        NEXUS_URL = "10.126.66.233:8081"
+        NEXUS_REPOSITORY = "maven-nexus-repo"
+        NEXUS_CREDENTIAL_ID = "docker_hub"
     }
 
     agent any
